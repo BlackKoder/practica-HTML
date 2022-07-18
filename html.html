@@ -1,0 +1,180 @@
+HTML es un lenguaje de marcado de hipertexto. En el cual su sintaxis de código siempre se representa bajo etiquetas... En las cuales existen, las etiquetas de apertura y de cierre. <etiqueta atributo="valor">Contenido</etiqueta> Estas etiquetas también pueden poseer un atributo en el cual se le asignan una serie de características en concreto, y por supuesto, un valor, que es lo que representa el atributo. Dentro de las etiquetas normalmente habrá un contenido, que puede ser básicamente casi cualquier tipo de cosa, por ejemplo.. Una imagen, un audio, un vídeo, otras etiquetas, un contenedor... etc. Ahí es donde va a ir el contenido de nuestra web.
+
+Por lo general el archivo principal que va a ser el que se denomine como la pagina de inicio. Se le asigna el nombre de index.html para indicar que es la primera pagina que va a estar indexada a nuestra web. Y así el usuario, podrá tener acceso a nuestro a través de ella... En otras palabras, o palabras más simples. Nuestra pagina principal, que va a hacer de home en nuestro sitio web. Los archivos html siempre, se guardan bajo ese nombre de la extensión .html.
+
+Los atributos más utilizados normalmente en el lenguaje de HTML, son los de id="" y class="" que bien sirven para identificar, una etiqueta una sintaxis del código para modificarlo o aplicarlo dentro de otro lenguaje, como por ejemplo en CSS o JavaScript.
+
+El documento html siempre se inicia bajo las etiquetas correspondientes de su dicho lenguaje, o sea, <html></html> constan dentro de estas etiquetas otras dos más que organizan nuestro documento, que bien vienen siendo el <head></head> y el <body></body>. Siendo el head, la cabezera donde se insertan los metadatos, e información que no va a ser vista por el usuario en el navegador. Y que va a ser interpretado por el mismo google, o por algún desarrollador que vea el mismo código. Normalmente ahí alberga el título de la pagina, el favicon, las palabras claves para poder ser conseguido más fácil en el buscador, y alguna otra información concerniente para el navegador.
+
+En el body, es donde nosotros vamos a poner todo el contenido de nuestra pagina web, bien sea texto o lo que sea. Todo, absolutamnete todo va a ir organizado ahí
+
+<!--Comentario--> Así se represetan los comentarios en html, estos se utilizan para indicar a los demás desarrolladores qué es y para qué sirve una línea de código en específico. Sobre todo porque a la hora de organizarce en un trabajo 
+
+Para los textos tenemos distintos tipos de etiquetas. La <span></span> nos sirve para que el navegador y google tome como relevante ese contenido en nuestra web, y pueda indexarlo mejor en los buscadores. La <strong></strong> Esta nos sirve para hacer énfasis en una palabra en particular, o frase para que destaque y sea relevante en la indexación <b></b> Esta es para poner la fuente en bold, en negritas, <i></i> Esta es para poner la fuente en italica. Se sabe que para agregar textos, se agrega la etiqueta <p></p> en la que podremos encerrar párrafos, <blockquote></blockquote> Particularmente esta es utilizada como referencial, se utiliza más que todo para citar un diálogo o frase. Bien sea de un personaje histórico, o sacado de un libro en particular, junto a esta tenemos la etiqueta <cite></cite> que bien nos sirve para citar el nombre del autor de la referencia o cita.
+
+Tenemos también las etiquetas para agregar títulos. Se organizan y dividen por el menor número que es <h1></h1> hasta el <h6></h6> que vendría siendo del tamaño de la fuente más grande, al más pequeño... ejemplo: <h1></h1> <h2></h2> <h3></h3> <h4></h4> <h5></h5> <h6></h6>
+Cada uno viene con un tamaño de fuente distinto, para poner el título o subtítulo o que bien sea un texto que destaque en la pagina. Normalmente, solo podemos o deberíamos usar unicamente un <h1></h1> ya que google la tomara como el título de contenido principal, y evidentemente quedaremos mejor posicionados... Podríamos tener más de un h1 en nuestro sitio, sin embargo no es lo recomendable
+<br>Esta etiqueta tiene la particularidad de que no posee una etiqueta de cierre, ya que este tipo de etiqueta se cierra por si sola, y esta sirve para hacer un espaciado o salto de línea en nuestro texto o documento, pudiendo así interlinear también un contenedor, imagen o algún objeto en particular del sitio
+<hr> Esta es igual a la anterior, solo que nos agrega una línea que separa el texto, esta es utilizada más que todo para diferenciar un texto de otro, y bien para el diseño
+
+en html también es bien recibido el uso de imagenes para aportarle algo más al sitio web. Entonces, para agregar las imagenes usamos la etiqueta <img src=""> esta al igual que las anteriores, no necesita de una etiqueta de cierre. Cuenta con un atributo llamado src, en el que colocaremos la ruta de el destino de nuestro archivo de imagen. Bien sea en una carpeta alojada en un servidor, o bien sea bajo una ruta absoluta en la que utilizamos otro servidor u otro medio para agregar la imagen, solo con colocar la ruta de destino. img cuenta con otros atributos también, como el de width y height. Que son para jugar con las dimensiones de la imagen, la altura y anchura. También tenemos un atributo llamado alt, que este nos sirve en caso de que nuestra imagen no cargue por x razón del destino, nos aparecerá un texto en donde se supone que va la imagen, para identificar el problema. En muchos casos, se le coloca el nombre de la imagen o su función dentro del sitio. También está el atributo title, que este lo que hace es que cuando colocamos el cursos sobre nuestra imagen aparezca un texto, en el que normalmente le damos un nombre a la imagen.
+
+Tenemos la etiqueta <a href=""></a> que es una de las más importantes, ya que se dedica a los enlaces del sitio. esta cuenta con el atributo href, que se encarga de redireccionar a algún otro documento html en especifico, o algún otro documento para que ejecute una función en específico. La ruta que se le puede agregar bien puede ser absoluta o relativa, las rutas absolutas son las típicas URL que contienen un protocolo http y está indexado bajo otro servidor en la web, un ejemplo de ello es el mismo google por ejemplo. Y están las relativas, que son las rutas en nuestros directorios del proyecto o similar, que actuan bajo nuestro propio servidor local, o el servidor donde está alojada la pagina. a los enlaces se les puede asignar un atributo llamado target con el valor _blank. Y este lo que hará es que en ves de redireccionarnos dentro de la misma pestaña en la que estamos en nuestra pagina, simplemente habre otra pestaña y nos redirecciona al sitio
+
+En html también podemos hacer listas, para eso tenemos la etiqueta <ul></ul> y <ol></ol> las ul son para las listas desordenadas, y las ol para las listas ordenadas. Las listas desordenadas bien se pueden utilizar para crear un menú de navegación, y las ol tienen la diferencia de que tienen unos números, que indexan cada objeto de la lista. Lo que quiere decir que estas más que todo pueden usarse para hacer índices. Dentro de las etiquetas ul u ol debemos de agregar una etiqueta más que se llama <li></li> aquí es donde se pone bien nuestro enlace que redirecciona a alguna parte en nuestro menú de navegación, o uno de los objetos de nuestra lista... etc. Se puede crear una lista anidada entre una y otra
+
+Tenemos las etiquetas para crear tablas, estas ya no son usadas... Y muy pocas veces pueden ser utilizadas ya que han sido remplazadas por los div... Ya que se puede hacer lo mismo, y diseñarlas a gusto en css. Pero para crear una tabla, nada más debemos de crearla con la etiqueta <table></table> dentro de esta etiqueta debe de haber el uso de otras dos etiquetas para dividirse y organizarse mejor. Para eso tenemos las etiquetas para crear las filas y las columnas. <tr></tr> es para crear una fila y <td></td> que son para crear las columnas
+
+Tenemos también la etiqueta de <header></header> esta es para crear nuestra cabecera de la pagina, esta es para poner el menú de navegación más que todo o algún contenido adicional, como un botón que cambie alguna característica de la pagina o similar dentro de esta misma tenemos la etiqueta <nav></nav> en esta se colocan los enlaces a los que se redirecciona entre un sitio y otro en la pagina. Aquí podemos desarrollar nuestro menú de navegación
+
+<div></div> estas son las etiquetas que usamos para separar contenido y poder organizarnos mejor, se les puede reconocer como si fueran unas cajas... O asociar mejor dicho, dentro de estos podemos poner contenido visual de la pagina, como una imagen, video o similar.
+
+<section></section> estas son las etiquetas para crear secciones en nuestra pagina, en ellas podemos colocar dentro un articulo, o cualquier contenido de nuestra pagina. Normalmente se conoce que google posiciona bien si sabe poner en buen uso esta etiqueta
+
+<article></article>Dentro de esta etiqueta podemos colocar un articulo, un texto o parrafo que sea concerniente a nuestra pagina o sobre el tema que estamos hablando en particular
+
+<aside></aside> Esta etiqueta se utiliza como un contenido que se maneja a parte, porque aquí podremos poner enlaces, publicidad o un contenido secundario de nuestra pagina web
+
+Ahora viene uno de las etiquetas más importantes, que vendrían siendo las etiquetas para hacer los formularios... Estás son importantes ya que a través de ellas los usuarios pueden ingresar datos, y se les puede dar una respuesta dependiendo de la interación que tenga nuestro formulario con la base de datos de nuestra pagina. Así que son muy útiles a la hora de ofrecer un contenido o de servir como interacción entre el usuario y la pagina. Para eso tenemos primero la etiqueta <form action="" method=""></form> esta es la primera que necesitamos para identificar que estamos haciendo un formulario, aquí se encierran todos los inputs que son los elementos de entrada de datos de nuestro formulario. Esta etiqueta posee dos atributos importantes que se le asignan para tener una interacción con algún archivo del servidor que interprete las variables correctamente, e ingrese o muestre información de la base de datos. En el atributo de action se le asigna nuestro archivo que interactua con el servidor, bien puede ser conexión.php por ejemplo... Y en method declaramos si el tipo de utilidad del formulario es POST o GET
+
+<input type="" name=""> tenemos la etiqueta de input, aquí es donde el usuario va a ingresar la información solicitada. Tiene un par de atributos, en los cuales uno se llama type para mostrar el tipo de input y el otro name, para identificarlo. El valor del atributo type puede ser: text, password, email, checkbox, radio, color range, button y submit. Text, es para colocar un texto. Password es para que al colocar o ingresar datos, aparezca oculto con los tipicos caracteres de contraseña en las paginas, email es para colocar el correo. Si no se agrega un formato de correo válido entonces el input te indicará que no se puede proceder con la solicitud, checkbox es para agregar una caja en la que se puede tildar con un check para seleccionar algo en específico, radio es lo mismo que el anterior pero solo puedes escoger entre una opción y otra, también viene en forma de botones o circulos que se rellenan una vez das click, color esta está utilizada para agregar una paleta de colores, para seleccionar un color se puede utilizar en algún sitio de personalización o un juego por ejemplo. Range en este se establece un rango, es solo una línea, se puede utilizar para asignar un valor a un plano o estadística, button este es simplemente un boton. En el que se le puede agregar alguna interacción o evento con js por ejemplo. submit, este es un botón igualmente, pero que procesa datos al servidor y efectua algún cambio en particular
+
+<label></label> estas son etiquetas que se utilizan para identificar los inputs más que todo, para eso se utiliza el atributo for en la etiqueta, la cual debe de tener el mismo valor que en el atributo name de la etiqueta input. Ya que así, se le puede asignar dicho label a ese input
+
+<select></select> aquí podemos agregar una serie de opciones en las cual escoger, esto se utiliza normalmente como para escoger un país o una lista muy grande de respuestas. Dentro de ella va la etiqueta <option></option> y en cada una de las etiquetas van las opciones mencionadas, un dato importante es que tienen un atributo llamado value, que como valor debe de ser asignado el mismo texto que va dentro de la etiqueta option, porque de lo contrario no muestra ninguna opción para escoger
+
+<footer></footer> esta es la etiqueta que se utiliza como pie de pagina, y sirve para agregar información institucional de la empresa o grupo más que todo, de la pagina en sí
+
+<meta> estas etiquetas pertenecen a la cabecera del documento porque es información que no va a ser vista por el usuario, sino que va a ser interpretada y reasignada para una mejor indexación. En ellas tenemos lo que es la tipica meta con el atributo charset y el valor utf-8
+<meta charset="utf-8"> Así, esta etiqueta se utiliza porque se utiliza la versión de caracteres unicode en su versión 8. Precisamente porque si agregamos algún texto en nuestra pagina que no sea el idioma en la que la estamos desarrollando. Nos va a saltar un error ya que no posee la forma de interpretar el lenguaje, esto se utilza más que todo en el caso de que el traductor google quiera traducir la pagina y vaya a ser vista por usuarios de otros países. Entonces al final es una etiqueta muy importante, en la cual no se puede prescindir de ella. También tenemos las meta con el atributo name y content... En name va el tipo de finalidad para la que se usa esa meta, y en content valga la redundancia, el contenido. podemos tener el valor description, author o keywords en el atributo name por ejemplo. description sirve para agregar información concerniente a la pagina, la cual puede ser utilizada para que en el buscador haya una sinopsis o una breve reseña de nuestra pagina en el buscador y el usuario se centre o le llame la atención buscarlo. Tenemos keywords, que son las palabras claves que nos van a ayudar a ser indexados en los motores de búsqueda por una categoría en específico y tenemos author que vien se puede definir el grupo de desarrolladores o el dueño del sitio a quien pertenece, etc.
+
+También en html es importante el uso de otras etiquetas para mezclar otros lenguajes, tales como la etiqueta <script></script> que nos sirve para agregar código de javascript en el documento. Sin embargo, si ponemos el atributo src en la etiqueta y le asignamos la ruta en el directorio del proyecto, el archivo de javascript que tengamos relacionado con la pagina. Va a leer ese código y lo va a usar en el documento, lo cual hace que nuestro código esté organizado de una mejor forma y así sea menos engorroso poder identificar un problema
+
+<link rel="stylesheet" type="text/css" href=""> tenemos la etiqueta link, que es el enlace para bien agregar nuestra hoja de estilos de css por ejemplo, sin ella no se va a ver los estilos ni el diseño de nuestro sitio web. Entonces para eso debemos de ponerle los atributos rel con el valor de stylesheet "hoja de cascada" el atributo type, con el valor text/css en el cual se identifica que es un texto de css y por último ponemos nuestro atributo de redirección href y ponemos la ruta del archivo de css
+
+<link rel="shortcut icon" type="x-icon" href="img/favicon.ico"> en esta etiqueta link se supone que ponemos el icono que se ve en las pestañas de nuestros navegadores, ahí podremos poner un icono de nuestra pagina web para identificarlas y darle más originalidad y estilo
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta description="Esta es una pagina web, para cagarse de la risa, y hacerse unas buenas pajas">
+	<meta author="YO">
+	<meta keywords="pagina, paja, rerirse, sonrisa, risa, webo, mierda">
+	<title>HTML</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+	<h1>Título de nuestro documento</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Hola como estas, deja el bullyng el bullyng no es bueno, envenena el alma y el cerebro</p>
+	<img src="./img/1.jpg" width="300" height="300" alt="Imagen de mi pagina web" title="Imagen de mi panshitou">
+	<br><br>
+	<a target="_blank" href="https://www.google.com.ve">Ir a Google</a>
+	<a href="index.html">Inicio</a>
+	<a href="mailto:chrysxdzer0@gmail.com" title="Envíame un correo">Enviar Mensaje</a>
+	<hr>
+
+	<h2>Subtítulo del artículo</h2>
+
+	<p>
+		<blockquote>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut <strong>labore et dolore magna</strong> aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco <b>laboris nisi</b> ut aliquip ex ea commodo
+			consequat. <span>Duis aute irure dolor in reprehenderit</span> in voluptate velit esse
+			cillum dolore eu fugiat <i>nulla pariatur. Excepteur sint occaecat</i> cupidatat non
+			<br>
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+		<cite>Panshitou</cite>
+	</p>
+
+	<ul>
+		<li><a href="#">Item1</a></li>
+		<li>Item2</li>
+		<li>Item3</li>
+		<ul>
+			<li>Item1</li>
+			<li>Item2</li>
+		</ul>
+		<li>Item4</li>
+		<li>Item5</li>
+	</ul>
+
+	<ol>
+		<li><a href="#">Item1</a></li>
+		<li>Item2</li>
+		<li>Item3</li>
+		<ul>
+			<li>Item1</li>
+			<li>Item2</li>
+		</ul>
+		<li>Item4</li>
+		<li>Item5</li>
+	</ol>
+
+	<table>
+		<tr>
+			<td>Item1</td>
+			<td>Item4</td>
+			<td>Item7</td>
+		</tr>
+		<tr>
+			<td>Item2</td>
+			<td>Item5</td>
+			<td>Item8</td>
+		</tr>
+		<tr>
+			<td>Item3</td>
+			<td>Item6</td>
+			<td>Item9</td>
+		</tr>
+	</table>
+	<br><br>
+
+	<h3>Formulario</h3>
+
+	<form action="archivo.php" method="_POST"> 
+		<label for="nombre">Ingresa tu nombre:</label>
+		<input type="text" placeholder="Escriba el texto" id="nombre" name="nombre">
+		<br><br>
+		<label for="pass">Ingresa la contraseña:</label>
+		<input type="password" maxlength="8" name="pass" placeholder="Ingresa una contraseña" id="pass">
+		<br><br>
+		<label for="email">Ingresa tu correo</label>
+		<input type="email" placeholder="Ingresa un correo Electrónico" name="email" id="email">	
+		<br><br>
+		<label for="check">Selecciona un color</label>
+		<input type="checkbox" name="check" id="check"> Rojo
+		<input type="checkbox" name="check" id="check"> Azul
+		<br><br>
+		<label for="sexo">Selecciona tu sexo</label>
+		<input type="radio" name="sexo" id="sexo">Hombre
+		<input type="radio" name="sexo" id="sexo">Mujer
+		<br><br>
+		<label for="color">Selecciona un color</label>
+		<input type="color" name="color" id="color">
+		<br><br>
+		<label for="rango">Selecciona el rango</label>
+		<input type="range" name="rango" id="rango">
+		<br><br>
+		<label for="país">Selecciona un país</label>
+		<select name="país" id="país">
+			<option value="Venezuela">Venezuela</option>
+			<option value="Disneylandia">Disneylandia</option>
+		</select>
+		<br><br>
+		<input type="button" value="Enviar" name=""> 
+		<input type="submit" value="Enviar datos" name="">
+		<a href="layout.html">Ir al layout</a>
+	</form>
+	<script src="main.js "></script>
+</body>
+</html>
